@@ -12,7 +12,7 @@ The dataset used in this project is `seattle-weather.csv`, which includes the fo
 - **weather:** Weather conditions (encoded as integers).
 
 ## Project Structure
-- `weather_predictor.py`: Contains the code for model training, testing, and evaluation.
+- `Predictor.py`: Contains the code for model training, testing, and evaluation.
 - `seattle-weather.csv`: The dataset file used for training and testing.
 - `decesion_tree_model.pkl`, `random_forest_model.pkl`, `xgb_model.pkl`: Saved models after training and optimization.
 - `README.md`: This documentation file.
@@ -32,18 +32,20 @@ pip install -r requirements.txt
 ## How to Run the Project
 1. Clone the repository:
 
-   git clone https://github.com/muonorb/Weather-Predictor.git
+   'git clone https://github.com/muonorb/Weather-Predictor.git'
   
 3. Navigate to the project directory:
-  
-   cd Weather-Predictor
+
+   `cd Weather-Predictor`
 
 4. Ensure the dataset file `seattle-weather.csv` is in the project directory.
-5. Run the `weather_predictor.py` script:
-   
-   python weather_predictor.py
-   
-   
+5. Run the `Weather_Predictor` scripts:
+
+  `python Predictor.py`
+  `python model.py`
+  `python main.py`
+
+  
 ## Models Overview
 Three machine learning models are implemented and evaluated in this project:
 
@@ -63,7 +65,7 @@ Three machine learning models are implemented and evaluated in this project:
 - **Evaluation Metrics:** Mean Absolute Error (MAE), R² score.
 
 ## Results
-After training and optimizing each model, the performance is evaluated using MAE and R² score. Scatter plots are generated to visualize the model predictions against actual values and the model is considered.
+After training and optimizing each model, the performance is evaluated using MAE and R² score. Scatter plots are generated to visualize the model predictions against actual values and the right model is considered.
 
 ## Conclusion
 This project demonstrates the use of multiple regression algorithms to predict weather conditions based on historical weather data. The models are fine-tuned using GridSearchCV for optimal performance.
