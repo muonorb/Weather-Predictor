@@ -1,0 +1,8 @@
+Predictor
+pandas 
+scikit-learn
+tk 
+pillow
+xgboost 
+matplotlib
+joblib
